@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<header class="header-container-wrapper" th:fragment="header">
+    <nav class="header-container">
 
-</body>
-</html>
+        <section class="left-container">
+            <img src="/static/images/logo5.png" height="80px" width="110px">
+        </section>
+
+        <section class="right-container">
+            <a href="/"><li class="header-item">Hjem</li></a>
+            <a href="#"><li class="header-item">Bøker</li></a>
+            <a href="#"><li class="header-item">Aktuelt</li></a>
+            <a href="#"><li class="header-item">Om</li></a>
+        </section>
+    </nav>
+</header>

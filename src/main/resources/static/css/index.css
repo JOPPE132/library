@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-section{
+    background-color: #004357;
+    height: 30rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.search-title{
+    text-align: center;
+    padding-right: 90rem;
+    color: white;
+    font-size: 5rem;
+    padding-top: 3rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    padding: 3rem 1rem;
+    height: 5rem;
+    width: 75rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+    border: none;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+.search-input-submit{
+    height: 5rem;
+    width: 35rem;
+    font-size: 2rem;
+    padding: 3rem 1rem;
+    border: none;
+}
+
+.search-description{
+    text-align: center;
+    padding-right: 63rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.template-container-wrapper{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 140rem;
+}
+
+.template-container{
+    text-align: center;
+    margin: 0rem 5rem;
+    margin-top: 5rem;
+    max-width: 52rem;
+    width: 52rem;
+}
+
+.template-title{
+    font-size: 2rem;
+    color: #004357;
+}
+
+.template-description{
+    font-size: 1.5rem;
+}
+
+.information-container-wrapper{
+    margin-top: 5rem;
+    height: 20rem;
+    background-color: lightskyblue;
+}
+
+.book-title{
+    font-size: 10rem;
+}
+
+

@@ -52,6 +52,15 @@ public class Author {
     }
 
     /**
+     * Returns author id
+     *
+     * @return author id
+     */
+    public int getAid(){
+        return this.aid;
+    }
+
+    /**
      * Returns author name
      *
      * @return author name

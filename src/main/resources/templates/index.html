@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Library</title>
+    <link rel="stylesheet" th:href="@{static/css/fragments/header.css}">
+    <link rel="stylesheet" th:href="@{static/css/index.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .material-symbols-outlined{
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+
+    <header th:replace="~{fragments/header.html :: header}"></header>
+
+
+    <section class="search-section">
+        <h4 class="search-title">Bibliotek</h4>
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Finn litteratur..">
+            <input class="search-input-submit" type="submit" value="Søk">
+        </div>
+        <p class="search-description">Søk blant bøker, aviser, artikler og mye mye mer&nbsp;...</p>
+    </section>
+
+    <section class="template-container-wrapper">
+        <div class="template-container">
+            <h4 class="template-title">Åpningstid og kontaktinformasjon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Bibliotekets åpningstider og kontaktinformasjon til alle campusbibliotek</p>
+        </div>
+        <div class="template-container">
+            <h4 class="template-title">Skrive og referere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Oppgaveskriving, referansebruk, literaturlister og APA</p>
+        </div>
+        <div class="template-container">
+            <h4 class="template-title">Finn litteratur og fagstoff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Bøker, e-ressurser, artikler, pensum, ordbøker, standarder og aviser</p>
+        </div>
+        <div class="template-container">
+            <h4 class="template-title">Forskningsstøtte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Her finner du alt du trenger å vite om forskningsstøtte hos nye prosjekter</p>
+        </div>
+        <div class="template-container">
+            <h4 class="template-title">Låne og bestille&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Praktisk informasjon om lån, fornying, reservasjon og bestiling av bøker</p>
+        </div>
+        <div class="template-container">
+            <h4 class="template-title">Få hjelp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">arrow_forward_ios</span></h4>
+            <p class="template-description">Chat, hjelpetjeneste og brukerstøtte</p>
+        </div>
+    </section>
+
+
+    <section class="featured-books">
+
+        <div th:each="books : ${featuredBooks}">
+
+            <h1 class="book-title" th:text="${books.name}"></h1>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
 
 </body>
 </html>

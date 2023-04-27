@@ -1,0 +1,41 @@
+.header-container-wrapper{
+}
+
+.header-container{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    padding-left: 40rem;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    padding-right: 40rem;
+}
+
+.right-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-item{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0rem 3rem;
+}
+
+.header-item:hover{
+    text-decoration: underline;
+    text-decoration-color: #ebd807;
+    text-decoration-thickness: 5px;
+}
